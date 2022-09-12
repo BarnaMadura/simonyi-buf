@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Büfé</title>
+</head>
+<body>
+    <nav class="navigation">
+        <ul>
+          <li><a class="smilegate" href="index.html">Simonyi Büfé</a></li>
+          <li><a href="mainpage.html"><img class="logo" src="logo.png" alt=""></a></li>
+          <li><a id="menupoint" href="leiras.html">Leírás</a></li>
+          <li><a id="menupoint" href="etelek.html">Ételek</a></li>
+          <li><a id="menupoint" href="italok.html">Italok</a></li>
+          <li><a id="menupoint" href="kepek.html">Képek</a></li>
+          <button class="playNowButton" >Regisztráció</button>
+        </ul>
+    
+      </nav>
+
+
+      <div class="tab">
+        <button class="tablinks active" onclick="openCity(event, 'naturaqua')"><img class="icon" src="naturaqua.jpg"
+            alt=""></button>
+        <button class="tablinks" onclick="openCity(event, 'powerade')"><img class="icon" src="powerade.jpg"
+            alt=""></button>
+        <button class="tablinks" onclick="openCity(event, 'hell')"><img class="icon" src="hellc.png"
+            alt=""></button>
+        <button class="tablinks" onclick="openCity(event, 'cola')"><img class="icon" src="cola.jpg"
+            alt=""></button>
+      </div>
+      <div id="naturaqua" class="tabcontent">
+        <img src="naturaqua.jpg" alt="">
+        <h3>Natur Aqua</h3>
+      </div>
+      <div id="powerade" class="tabcontent">
+        <img src="powerade.jpg" alt="">
+        <h3>Powerade</h3>
+        
+      </div>
+  
+      <div id="hell" class="tabcontent">
+        <img src="hellc.png" alt="">
+        <h3>Hell Coffee</h3>
+        
+      </div>
+      <div id="cola" class="tabcontent">
+        <img src="cola.jpg" alt="">
+        <h3>Coca-cola</h3>
+        
+      </div>
+      
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+      </script>
+    
+  
+    
+
+    
+<script src="script.js" defer></script>
+</body onload="openCity(event, 'valtan')">
+</html>

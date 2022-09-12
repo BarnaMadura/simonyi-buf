@@ -1,0 +1,168 @@
+:root {
+    --lagray: #2f363e;
+    --layellow: rgb(243, 228, 185);
+}
+
+* {
+    font-family: 'Prompt', sans-serif;
+
+}
+
+html {
+    background-color: var(--lagray);
+    overflow-x: hidden;
+}
+body {
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--lagray) !important;
+    padding: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.navigation {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul li #menupoint {
+    display: inline-block;
+    padding: 20px 20px;
+    color: white;
+    background-color: var(--lagray);
+    /* font-weight: bold; */
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+nav ul li {
+    float: left;
+
+}
+
+nav ul li #menupoint:hover {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+nav ul li:first-child a:hover {
+    background-color: var(--lagray);
+    color: var(--layellow);
+}
+
+nav {
+    background-color: var(--lagray);
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin: 7px;
+}
+.playNowButton {
+    float: right;
+    background-color: var(--lagray);
+    border: 1px solid var(--layellow);
+    color: var(--layellow);
+    padding: 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 13px;
+}
+
+.playNowButton:hover {
+    background-color: rgb(51, 51, 51);
+}
+.smilegate {
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+    background-color: var(--lagray);
+    /* font-weight: bold; */
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.tab {
+    overflow: hidden;
+    width: 100%;
+    margin-left: 30%;
+  }
+  .tab img{
+      border-radius: 10px;
+  }
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 5px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 5px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: var(--layellow);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: var(--layellow);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+
+
+  .tabcontent h3{
+      color: var(--layellow);
+      position: absolute;
+      z-index: 1;
+      margin: 60px 30px 0px;
+      font-weight: bold;
+  }
+
+  .tabcontent p{
+      color: #fff;
+      position: absolute;
+      z-index: 1;
+      width: 500px;
+      margin: 110px 30px 30px;
+      font-size: 16px;
+  }
+
+  .tabcontent img{
+     position: absolute;
+     z-index: 0;
+     width: 450px;
+     margin-left: 30%;
+     margin-top: 30px;
+     border-radius: 10px;
+  }
+
+  .icon{ 
+    width: 80px;
+    height: 80px;
+  }
